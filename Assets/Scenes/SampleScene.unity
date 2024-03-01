@@ -1,0 +1,2132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &85908982
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 85908984}
+  - component: {fileID: 85908983}
+  m_Layer: 0
+  m_Name: CourseForge_Connector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &85908983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85908982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8162b8f5220ed9346bce077f8debfca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filePath: E:\MyFolder\Server_mine\1-20-2 [Miguxos]\Miguxos 2.1 [Fabric 1.20.2]-2.1.zip
+  runetimeInstanceJson: "C:\\Users\\Nicolas\\curseforge\\minecraft\\Instances\\Miguxo\xB4s
+    Adventure [Fabric 1.20.2] (1)\\minecraftinstance.json"
+  m_apiKey: $2a$10$fCOJ/vPfrkjrVi8Aqlczru3.uECx63lThAxj5BrwG.dPTkfJIjoni
+  m_modUID: 432
+  runetimeProfile:
+    name: Miguxos 2.0 [Fabric 1.20.2]
+    gameTypeID: 432
+    gameVersion: 1.20.2
+    allocatedMemory: 4096
+    baseModLoader:
+      forgeVersion: 0.14.24
+      name: fabric-0.14.24-1.20.2
+      type: 4
+      downloadUrl: https://fabricmc.forgecdn.net/net/fabricmc/fabric-loader/0.14.24/fabric-loader-0.14.24.jar
+      filename: fabric-loader-0.14.24.jar
+      installMethod: 4
+      latest: 1
+      recommended: 1
+      version:
+        id: 
+        release: 
+        mainClass: 
+        minimumLauncherVersion: 
+      librariesInstallLocation: '{0}libraries/net/fabricmc/fabric-loader/0.14.24'
+      minecraftVersion: 1.20.2
+    installPath: "C:\\Users\\Nicolas\\curseforge\\minecraft\\Instances\\Miguxo\xB4s
+      Adventure [Fabric 1.20.2] (1)\\"
+    installedAddons:
+    - name: Sodium
+      instanceID: e892adac-7efc-46de-8d35-3713015d70ec
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: sodium-fabric-mc1.16.5-0.2.0+build.4.jar
+    - name: Sound Physics Remastered
+      instanceID: a53d7601-c526-4460-9f8d-6cff5fbd8d6b
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: soundphysics-fabric-1.20.1-1.1.2.jar.disabled
+    - name: Continuity
+      instanceID: 0d6a6906-a882-4a29-8858-1a1418793042
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: Continuity-Mod-Fabric-1.20.2.jar
+    - name: Better Third Person
+      instanceID: 4df5c408-1195-4aa0-bb88-46abe16b4218
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: BetterThirdPerson-Fabric-1.20-1.9.0.jar.disabled
+    - name: Dynamic Lights [Server] [Forge/Fabric/Quilt]
+      instanceID: 61d085ba-745f-4dfd-8064-9070426df7d4
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: dynamiclights-v1.7-mc1.17x-1.20x-mod.jar
+    - name: '[EMF] Entity Model Features [Fabric & Forge]'
+      instanceID: 09027f85-7e16-466d-988a-244fe1dab511
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: entity_model_features_fabric_1.20.2-1.1.0.jar
+    - name: Particle Rain
+      instanceID: 6877630b-e91b-4be6-9ec6-cd487ee5ef2a
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: particle-rain-2.0.8.jar
+    - name: Indium
+      instanceID: 6c20cf9e-c701-4537-84db-b4b4c07c50f4
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: indium-1.0.27+mc1.20.1.jar
+    - name: AmbientSounds 5
+      instanceID: 4e7c316e-ee9b-4f4b-9d04-0152aa3a76e1
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: AmbientSounds_FABRIC_v5.2.22_mc1.20.1.jar
+    - name: Iris Shaders
+      instanceID: 93820eef-f252-45f1-b802-16d2139d47ed
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: Iris-Shaders-Mod-Fabric-Quilt-1.20.2.jar
+    - name: Fabric API
+      instanceID: b1f09966-d1bc-4bf7-a628-0f9ea4e82577
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: fabric-api-0.90.4+1.20.2.jar
+    - name: Balm (Fabric Edition)
+      instanceID: 63c3d5ed-af76-44d8-8b72-1a580d1dc4a7
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: balm-fabric-1.20.2-8.0.1.jar
+    - name: Visuality
+      instanceID: 127160dc-2fa8-45da-86ab-ec147044593f
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: visuality-0.7.1+1.20.jar
+    - name: Lithium (Fabric)
+      instanceID: fb6c9bfc-0ca4-499a-9560-2446a1271399
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: lithium-fabric-mc1.20.2-0.12.0.jar
+    - name: Waystones (Fabric Edition)
+      instanceID: adfd03e0-5a40-4e75-a12e-194f9b3c78af
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: waystones-fabric-1.20.2-15.0.0.jar
+    - name: Better Combat [Fabric & Forge]
+      instanceID: 933902a0-2575-4bac-834e-6ed2437a8e57
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: bettercombat-fabric-1.8.1+1.20.2.jar
+    - name: Cloth Config API (Fabric/Forge/NeoForge)
+      instanceID: b103fb7b-5b29-4336-b813-7ac7b584d427
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: cloth-config-12.0.109-fabric.jar
+    - name: '[ETF] Entity Texture Features - [Fabric & Forge]'
+      instanceID: 2db948b0-ac1d-4549-bd93-f8894892a850
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: entity_texture_features_fabric_1.20.2-4.6.1.jar
+    - name: Game Menu Mod Option [Forge]
+      instanceID: 8d97e4c4-d485-4132-8107-a3b098f93414
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: Game-Menu-Mod-Option-Forge-1.20.2.jar
+    - name: Just Enough Items (JEI)
+      instanceID: 4a1b7ed9-940f-4d6f-bf28-c2b1f68909c3
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: jei-1.20.2-fabric-16.0.0.28.jar
+    - name: project-915779
+      instanceID: 33877e47-ad3a-4db6-8759-5b77098acc52
+      gameID: 432
+      categoryClassID: 12
+      fileNameOnDisk: PFS sounds r1.0.zip
+    - name: playerAnimator
+      instanceID: f696f2d5-b470-4a9f-991c-385ea03bb599
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: player-animation-lib-fabric-1.0.2+1.19.4.jar
+    - name: CreativeCore
+      instanceID: 2567f0d9-5ace-4693-bd0a-2b56fe120ce9
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: CreativeCore_FABRIC_v2.11.2_mc1.20.2.jar
+    - name: Motschen's Better Leaves
+      instanceID: 1cd6d300-8f6e-4f49-93bc-edaca96c40a5
+      gameID: 432
+      categoryClassID: 12
+      fileNameOnDisk: Better-Leaves-7.2-1.19+.zip
+    - name: Starlight (Fabric)
+      instanceID: 19e138d9-a07c-455c-87b6-0be8fc6d036a
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: starlight-1.1.3+fabric.5867eae.jar
+    - name: BSL Shaders
+      instanceID: 970341c4-483d-4ac5-aef2-1fee9b203c4e
+      gameID: 432
+      categoryClassID: 6552
+      fileNameOnDisk: BSL_v8.2.06.zip
+    - name: Fresh Animations
+      instanceID: 8d7efeff-bbd5-4724-8981-5ceee1f9380f
+      gameID: 432
+      categoryClassID: 12
+      fileNameOnDisk: FreshAnimations_v1.8.1.zip
+    - name: Not Enough Animations
+      instanceID: a36b11db-3634-4203-8d2d-03cfbb531c1b
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: notenoughanimations-fabric-1.6.4-mc1.20.2.jar
+    - name: Visible Ores
+      instanceID: f9049325-4714-4f9a-858d-d8da4ae62728
+      gameID: 432
+      categoryClassID: 12
+      fileNameOnDisk: Visible Ores2.11.zip
+    - name: CIT Resewn
+      instanceID: 2580956a-779a-4374-b989-333ba0a707f0
+      gameID: 432
+      categoryClassID: 6
+      fileNameOnDisk: CITResewn-1.1.3+1.20.jar
+  courseForgegames:
+    data:
+    - name: Demeo
+      id: 78135
+      slug: demeo
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/468/250/637751406649699690.png
+        tileUrl: https://cfcore-assets.forgecdn.net/game-tiles/eaf07d14-8695-4f69-bd0c-78af44f94b4c.png
+        coverUrl: https://media.forgecdn.net/game-covers/78135_b8970d8d-91f4-4353-8e67-2aa5f3e499bb.webp
+      status: 6
+      apiStatus: 2
+    - name: WildStar
+      id: 454
+      slug: wildstar
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/762/638054972820516108.png
+        tileUrl: https://media.forgecdn.net/game-tiles/WildStar+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/454_a66a9b93-561f-48de-ac37-c98efb833811.webp
+      status: 6
+      apiStatus: 2
+    - name: Chronicles of Arcadia
+      id: 70667
+      slug: chronicles-of-arcadia
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/741/638054967544087957.png
+        tileUrl: https://media.forgecdn.net/game-tiles/arcadia.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/70667_b388840a-a23d-42ad-aae2-729ba35efd44.webp
+      status: 6
+      apiStatus: 2
+    - name: Final Fantasy III
+      id: 5026
+      slug: final-fantasy-iii
+      assets:
+        iconUrl: 
+        tileUrl: https://media.forgecdn.net/game-box-art/5026_3912d352-bdf6-496a-bbee-a07d2377771b.png
+        coverUrl: 
+      status: 6
+      apiStatus: 2
+    - name: Runes of Magic
+      id: 335
+      slug: rom
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/76/698/636173120361240569.png
+        tileUrl: https://media.forgecdn.net/game-tiles/Runes+of+Magic+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/335_f02f336b-ca21-49ac-9576-aaea45642302.webp
+      status: 6
+      apiStatus: 2
+    - name: Sid Meier's Civilization VI
+      id: 727
+      slug: civ6
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/740/638054967355252694.png
+        tileUrl: https://media.forgecdn.net/game-tiles/civilization-6.png
+        coverUrl: https://media.forgecdn.net/game-covers/727_05c0bca5-466e-45de-bbad-62ae2f58a667.webp
+      status: 6
+      apiStatus: 2
+    - name: The Elder Scrolls Online
+      id: 455
+      slug: teso
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/77/188/636173283407439352.png
+        tileUrl: https://media.forgecdn.net/game-tiles/The+Elder+Scrolls+Online+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/455_0f804f70-a0aa-49a4-8ca4-a87ecde9f0b1.webp
+      status: 6
+      apiStatus: 2
+    - name: Final Fantasy V
+      id: 5021
+      slug: final-fantasy-v
+      assets:
+        iconUrl: 
+        tileUrl: https://media.forgecdn.net/game-box-art/5021_e7882608-f934-457d-8b8f-1b584a9df1c0.png
+        coverUrl: 
+      status: 6
+      apiStatus: 2
+    - name: Final Fantasy I
+      id: 5230
+      slug: final-fantasy-i
+      assets:
+        iconUrl: 
+        tileUrl: https://media.forgecdn.net/game-box-art/5230_eb60e5f3-b539-4f2b-b76b-21ba5df40519.png
+        coverUrl: 
+      status: 6
+      apiStatus: 2
+    - name: The Sims 4
+      id: 78062
+      slug: sims4
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/315/638053972646247897.png
+        tileUrl: https://media.forgecdn.net/game-tiles/Sims+4+Tile.png
+        coverUrl: https://media.forgecdn.net/game-covers/78062_f27b573d-a698-4755-9861-ca6f910a9196.webp
+      status: 6
+      apiStatus: 2
+    - name: The Secret World
+      id: 64
+      slug: tsw
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/760/638054972345226215.png
+        tileUrl: https://media.forgecdn.net/game-tiles/tsw.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/64_f1e0afa1-fb84-4b30-be7b-668e6fd37894.webp
+      status: 6
+      apiStatus: 2
+    - name: Final Fantasy VI
+      id: 4773
+      slug: final-fantasy-vi
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/745/638054968911430508.png
+        tileUrl: https://media.forgecdn.net/game-box-art/4773_0069c4c2-18b0-4885-a439-25adb81b9a82.png
+        coverUrl: https://media.forgecdn.net/game-covers/4773_b64449b5-cb2d-492a-bb73-e9ad1ab2dce4.webp
+      status: 6
+      apiStatus: 2
+    - name: Among Us
+      id: 69761
+      slug: among-us
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/737/638054966435845908.png
+        tileUrl: https://media.forgecdn.net/game-tiles/among-us.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/69761_8f3e6ae0-c19e-4f6c-9b9c-5267e88cc588.webp
+      status: 6
+      apiStatus: 2
+    - name: Secret World Legends
+      id: 4455
+      slug: swlegends
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/754/638054970768371241.png
+        tileUrl: https://media.forgecdn.net/game-tiles/Secret+World+Legends+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/4455_d5a9f326-3d63-494e-b080-cd58260f6067.webp
+      status: 6
+      apiStatus: 2
+    - name: World of Tanks
+      id: 423
+      slug: worldoftanks
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/77/677/636174916166063366.png
+        tileUrl: https://media.forgecdn.net/game-tiles/World+of+Tanks+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/423_67ef25da-ad0a-4191-9b65-d1420caf4b4e.webp
+      status: 6
+      apiStatus: 2
+    - name: Terraria
+      id: 431
+      slug: terraria
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/65/488/636162973579653614.png
+        tileUrl: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd1d6F8NswgRELpoAUGCP5RuPK8QiJ9_FRuFCMCrZeSfSb74sxee3-jNArcIcKeLh4OuE&usqp=CAU
+        coverUrl: https://media.forgecdn.net/game-covers/431_21b31ce9-7f83-4a5a-8669-34d72434055d.webp
+      status: 6
+      apiStatus: 2
+    - name: Darkest Dungeon
+      id: 608
+      slug: darkestdungeon
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/742/638054967772267278.png
+        tileUrl: https://media.forgecdn.net/game-tiles/Darkest+Dungeon+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/608_b4b08960-1bc0-463b-b925-b6a53c8bf94c.webp
+      status: 6
+      apiStatus: 2
+    - name: Kerbal Space Program
+      id: 4401
+      slug: kerbal
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/747/638054969273937292.png
+        tileUrl: https://media.forgecdn.net/game-tiles/Kerbal+Space+Program+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/4401_e37cf34f-71b8-48b0-a877-712349fff968.webp
+      status: 6
+      apiStatus: 2
+    - name: Minecraft
+      id: 432
+      slug: minecraft
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/748/638054969446166748.png
+        tileUrl: https://static-cdn.jtvnw.net/ttv-boxart/Minecraft-285x380.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/432_6b01b380-9b98-4b0a-b885-bb0d51c27533.webp
+      status: 6
+      apiStatus: 2
+    - name: Tennis Elbow 4
+      id: 84137
+      slug: tennis-elbow-4
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/861/359/638268958862786751.png
+        tileUrl: https://cfcore-assets.forgecdn.net/game-tiles/5ce2a487-5c5f-4756-a530-cde687972281.png
+        coverUrl: https://cfcore-assets.forgecdn.net/game-covers/db5df989-a709-4fa0-9400-90669456e126.png
+      status: 6
+      apiStatus: 2
+    - name: Final Fantasy IV
+      id: 4741
+      slug: final-fantasy-iv
+      assets:
+        iconUrl: 
+        tileUrl: https://media.forgecdn.net/game-box-art/4741_b22d5fcb-ee2f-445a-8f1e-958be5a3889c.png
+        coverUrl: 
+      status: 6
+      apiStatus: 2
+    - name: Rushdown Revolt
+      id: 84062
+      slug: rushdown-revolt
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/862/643/638271244666920150.png
+        tileUrl: https://cfcore-assets.forgecdn.net/game-tiles/123da7b8-996e-47be-a65f-da96368ccad4.png
+        coverUrl: https://cfcore-assets.forgecdn.net/game-covers/ffc7dc1a-65d7-43c0-94c3-d9be782b0dae.png
+      status: 6
+      apiStatus: 2
+    - name: Minecraft Dungeons
+      id: 69271
+      slug: minecraft-dungeons
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/749/638054969632688688.png
+        tileUrl: https://media.forgecdn.net/game-tiles/minecraft-dungeons.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/69271_eee4443c-d02f-4054-a5f1-fd4952744a4f.webp
+      status: 6
+      apiStatus: 2
+    - name: StarCraft II
+      id: 65
+      slug: sc2
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/756/638054971315935359.png
+        tileUrl: https://media.forgecdn.net/game-tiles/StarCraft+II+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/65_84b1bfee-fb4a-488c-8c47-328ecac0de2f.webp
+      status: 6
+      apiStatus: 2
+    - name: Stardew Valley
+      id: 669
+      slug: stardewvalley
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/144/99/636553639128471675.png
+        tileUrl: https://media.forgecdn.net/game-tiles/Stardew+Valley+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/669_8ab534f1-cab5-4d0e-baa9-37d20f9ba8b5.webp
+      status: 6
+      apiStatus: 2
+    - name: Surviving Mars
+      id: 61489
+      slug: surviving-mars
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/758/638054971686927279.png
+        tileUrl: https://media.forgecdn.net/game-tiles/Surviving+Mars+Tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/61489_b2d9b15d-35d2-4e5f-a8bd-ccc25e2dee11.webp
+      status: 6
+      apiStatus: 2
+    - name: World of Warcraft
+      id: 1
+      slug: wow
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/63/986/636148993918069601.png
+        tileUrl: https://media.forgecdn.net/game-box-art/1_9b0a8ff4-90c0-4d72-967c-c2c60b8029f7.webp
+        coverUrl: https://media.forgecdn.net/game-covers/1_a73c30ce-8ed7-4bdf-b07f-4b3aeed590e6.webp
+      status: 6
+      apiStatus: 2
+    - name: Final Fantasy II
+      id: 5001
+      slug: final-fantasy-ii
+      assets:
+        iconUrl: 
+        tileUrl: https://media.forgecdn.net/game-box-art/5001_2e6573c1-186c-4259-9d1b-ead9dad7d381.png
+        coverUrl: 
+      status: 6
+      apiStatus: 2
+    - name: Rift
+      id: 424
+      slug: rift
+      assets:
+        iconUrl: https://media.forgecdn.net/avatars/652/751/638054969923607845.png
+        tileUrl: https://media.forgecdn.net/game-tiles/rift_tile.jpg
+        coverUrl: https://media.forgecdn.net/game-covers/424_66a99950-2169-4a89-a392-79f28434b11c.webp
+      status: 6
+      apiStatus: 2
+  modListFromManifest:
+  - name: Particle Rain
+    id: 421897
+    slug: particle-rain
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/particle-rain
+      wikiUrl: 
+      issuesUrl: https://github.com/PigCart/particle-rain/issues
+      sourceUrl: https://github.com/PigCart/particle-rain
+    summary: replaces rain with a particle effect
+    status: 4
+    downloadCount: 343558
+    isFeatured: 0
+    primaryCategoryId: 424
+    categories:
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 23074903
+      name: PigCart
+      url: https://www.curseforge.com/members/23074903-pigcart?username=pigcart
+    mainFileId: 4817098
+  - name: Better Third Person
+    id: 435044
+    slug: better-third-person
+    gameId: 432
+    classId: 6
+    enabled: 0
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/better-third-person
+      wikiUrl: 
+      issuesUrl: 
+      sourceUrl: 
+    summary: Improves third-person camera view.
+    status: 4
+    downloadCount: 22433537
+    isFeatured: 0
+    primaryCategoryId: 424
+    categories:
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    - name: Adventure and RPG
+      id: 422
+      slug: adventure-rpg
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/adventure-rpg
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 32582887
+      name: Socolio
+      url: https://www.curseforge.com/members/32582887-socolio?username=socolio
+    - id: 22475527
+      name: DreenDex
+      url: https://www.curseforge.com/members/22475527-dreendextwitch?username=dreendextwitch
+    mainFileId: 4596768
+  - name: Indium
+    id: 459496
+    slug: indium
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/indium
+      wikiUrl: 
+      issuesUrl: https://github.com/comp500/Indium/issues
+      sourceUrl: https://github.com/comp500/Indium
+    summary: Sodium addon providing support for the Fabric Rendering API, based on
+      Indigo
+    status: 4
+    downloadCount: 16404527
+    isFeatured: 0
+    primaryCategoryId: 426
+    categories:
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    - name: Addons
+      id: 426
+      slug: mc-addons
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-addons
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 9006466
+      name: comp500
+      url: https://www.curseforge.com/members/9006466-comp500?username=comp500
+    mainFileId: 4969421
+  - name: AmbientSounds 5
+    id: 254284
+    slug: ambientsounds
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/ambientsounds
+      wikiUrl: 
+      issuesUrl: https://github.com/CreativeMD/AmbientSounds/issues
+      sourceUrl: https://github.com/CreativeMD/AmbientSounds
+    summary: '#listentonature'
+    status: 4
+    downloadCount: 33964332
+    isFeatured: 0
+    primaryCategoryId: 425
+    categories:
+    - name: Miscellaneous
+      id: 425
+      slug: mc-miscellaneous
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-miscellaneous
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 8685730
+      name: CreativeMD
+      url: https://www.curseforge.com/members/8685730-creativemd?username=creativemd
+    mainFileId: 5056172
+  - name: Not Enough Animations
+    id: 433760
+    slug: not-enough-animations
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/not-enough-animations
+      wikiUrl: 
+      issuesUrl: https://github.com/tr7zw/NotEnoughAnimations/issues
+      sourceUrl: https://github.com/tr7zw/NotEnoughAnimations
+    summary: Bringing first-person animations to the third-person
+    status: 4
+    downloadCount: 26003314
+    isFeatured: 0
+    primaryCategoryId: 424
+    categories:
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    - name: Map and Information
+      id: 423
+      slug: map-information
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/map-information
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 100212189
+      name: tr7zw
+      url: https://www.curseforge.com/members/100212189-tr7zw_?username=tr7zw_
+    mainFileId: 5008775
+  - name: U Team Core
+    id: 273744
+    slug: u-team-core
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/u-team-core
+      wikiUrl: 
+      issuesUrl: https://github.com/MC-U-Team/U-Team-Core/issues
+      sourceUrl: https://github.com/MC-U-Team/U-Team-Core
+    summary: This libary contains many usefull modding stuff
+    status: 4
+    downloadCount: 30028485
+    isFeatured: 0
+    primaryCategoryId: 421
+    categories:
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 12785425
+      name: HyCraftHD
+      url: https://www.curseforge.com/members/12785425-hycrafthd?username=hycrafthd
+    mainFileId: 5058319
+  - name: Sodium
+    id: 394468
+    slug: sodium
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/sodium
+      wikiUrl: 
+      issuesUrl: https://github.com/CaffeineMC/sodium-fabric/issues
+      sourceUrl: https://github.com/CaffeineMC/sodium-fabric
+    summary: ' A Minecraft mod designed to improve frame rates and reduce micro-stutter'
+    status: 4
+    downloadCount: 26590443
+    isFeatured: 0
+    primaryCategoryId: 425
+    categories:
+    - name: Miscellaneous
+      id: 425
+      slug: mc-miscellaneous
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-miscellaneous
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 28746583
+      name: jellysquid3_
+      url: https://www.curseforge.com/members/28746583-jellysquid3_?username=jellysquid3_
+    mainFileId: 3488820
+  - name: project-915779
+    id: 915779
+    slug: project-915779
+    gameId: 432
+    classId: 12
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/texture-packs/project-915779
+      wikiUrl: 
+      issuesUrl: 
+      sourceUrl: 
+    summary: Presence Footsteps but it's a resourcepack! Adds realistic footsteps
+      sounds into Minecraft!
+    status: 9
+    downloadCount: 9891
+    isFeatured: 0
+    primaryCategoryId: 393
+    categories:
+    - name: Miscellaneous
+      id: 405
+      slug: miscellaneous
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/miscellaneous
+      isClass: 0
+      parentCategoryId: 12
+    - name: Traditional
+      id: 403
+      slug: traditional
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/traditional
+      isClass: 0
+      parentCategoryId: 12
+    - name: 16x
+      id: 393
+      slug: sixteen-x
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/sixteen-x
+      isClass: 0
+      parentCategoryId: 12
+    - name: Mod Support
+      id: 4465
+      slug: mod-support
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/mod-support
+      isClass: 0
+      parentCategoryId: 12
+    authors:
+    - id: 101140636
+      name: Lanixius
+      url: https://www.curseforge.com/members/101140636-lanixius_?username=lanixius_
+    mainFileId: 4908405
+  - name: Dynamic Lights [Server] [Forge/Fabric/Quilt]
+    id: 910095
+    slug: tschipcrafts-dynamic-lights-mod
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/tschipcrafts-dynamic-lights-mod
+      wikiUrl: https://github.com/Tschipcraft/dynamiclights/wiki
+      issuesUrl: https://github.com/Tschipcraft/dynamiclights/issues
+      sourceUrl: https://github.com/Tschipcraft/dynamiclights
+    summary: Supported entities and items such as torches or lanterns emit light!
+    status: 4
+    downloadCount: 105898
+    isFeatured: 0
+    primaryCategoryId: 424
+    categories:
+    - name: Adventure and RPG
+      id: 422
+      slug: adventure-rpg
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/adventure-rpg
+      isClass: 0
+      parentCategoryId: 6
+    - name: Armor, Tools, and Weapons
+      id: 434
+      slug: armor-weapons-tools
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/armor-weapons-tools
+      isClass: 0
+      parentCategoryId: 6
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    - name: Server Utility
+      id: 435
+      slug: server-utility
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/server-utility
+      isClass: 0
+      parentCategoryId: 6
+    - name: Utility & QoL
+      id: 5191
+      slug: utility-qol
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/utility-qol
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 102132758
+      name: Tschipcraft
+      url: https://www.curseforge.com/members/102132758-tschipcraft?username=tschipcraft
+    mainFileId: 5025060
+  - name: Continuity
+    id: 531351
+    slug: continuity
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/continuity
+      wikiUrl: 
+      issuesUrl: https://github.com/PepperCode1/Continuity/issues
+      sourceUrl: https://github.com/PepperCode1/Continuity
+    summary: A Fabric mod that allows for efficient connected textures
+    status: 4
+    downloadCount: 12702902
+    isFeatured: 0
+    primaryCategoryId: 424
+    categories:
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 100766963
+      name: Pepper_Bell
+      url: https://www.curseforge.com/members/100766963-pepper_bell?username=pepper_bell
+    mainFileId: 4441032
+  - name: '[ETF] Entity Texture Features - [Fabric & Forge]'
+    id: 568563
+    slug: entity-texture-features-fabric
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/entity-texture-features-fabric
+      wikiUrl: https://github.com/Traben-0/Entity_Texture_Features/blob/master/.github/README.md
+      issuesUrl: https://github.com/Traben-0/EmissiveMod/issues
+      sourceUrl: https://github.com/Traben-0/EmissiveMod
+    summary: Custom, Emissive and Varied mobs like Optifine and so much more.. +Player
+      skin features!)
+    status: 4
+    downloadCount: 14358064
+    isFeatured: 0
+    primaryCategoryId: 424
+    categories:
+    - name: Utility & QoL
+      id: 5191
+      slug: utility-qol
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/utility-qol
+      isClass: 0
+      parentCategoryId: 6
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 102405316
+      name: traben_0
+      url: https://www.curseforge.com/members/102405316-traben_0?username=traben_0
+    mainFileId: 5066460
+  - name: '[EMF] Entity Model Features [Fabric & Forge]'
+    id: 844662
+    slug: entity-model-features
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/entity-model-features
+      wikiUrl: https://github.com/Traben-0/Entity_Model_Features/blob/master/FEATURES.md
+      issuesUrl: https://github.com/Traben-0/Entity_Model_Features/issues
+      sourceUrl: 
+    summary: EMF is an, OptiFine format, Custom Entity Model replacement mod available
+      for Fabric and Forge.
+    status: 4
+    downloadCount: 6244601
+    isFeatured: 0
+    primaryCategoryId: 424
+    categories:
+    - name: Mobs
+      id: 411
+      slug: world-mobs
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/world-gen/world-mobs
+      isClass: 0
+      parentCategoryId: 406
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    - name: Utility & QoL
+      id: 5191
+      slug: utility-qol
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/utility-qol
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 102405316
+      name: traben_0
+      url: https://www.curseforge.com/members/102405316-traben_0?username=traben_0
+    mainFileId: 5039266
+  - name: Just Enough Items (JEI)
+    id: 238222
+    slug: jei
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/jei
+      wikiUrl: 
+      issuesUrl: https://github.com/mezz/JustEnoughItems/issues?q=is%3Aissue
+      sourceUrl: https://github.com/mezz/JustEnoughItems
+    summary: View Items and Recipes
+    status: 4
+    downloadCount: 284623305
+    isFeatured: 0
+    primaryCategoryId: 423
+    categories:
+    - name: Map and Information
+      id: 423
+      slug: map-information
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/map-information
+      isClass: 0
+      parentCategoryId: 6
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 17072262
+      name: mezz
+      url: https://www.curseforge.com/members/17072262-mezz?username=mezz
+    mainFileId: 4593548
+  - name: Iris Shaders
+    id: 455508
+    slug: irisshaders
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/irisshaders
+      wikiUrl: 
+      issuesUrl: https://github.com/IrisShaders/Iris/issues
+      sourceUrl: https://github.com/IrisShaders/Iris
+    summary: (OUTDATED PAGE) A modern shaders mod for Minecraft intended to be compatible
+      with existing Optifine shaders
+    status: 4
+    downloadCount: 19240345
+    isFeatured: 0
+    primaryCategoryId: 425
+    categories:
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    - name: Miscellaneous
+      id: 425
+      slug: mc-miscellaneous
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-miscellaneous
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 44226090
+      name: coderbot
+      url: https://www.curseforge.com/members/44226090-coderbot?username=coderbot
+    - id: 101521578
+      name: IMS21
+      url: https://www.curseforge.com/members/101521578-ims21?username=ims21
+    mainFileId: 4861717
+  - name: Fabric API
+    id: 306612
+    slug: fabric-api
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/fabric-api
+      wikiUrl: https://fabricmc.net/wiki/
+      issuesUrl: https://github.com/FabricMC/fabric/issues
+      sourceUrl: https://github.com/FabricMC/fabric
+    summary: Core API library for the Fabric toolchain
+    status: 4
+    downloadCount: 76501137
+    isFeatured: 0
+    primaryCategoryId: 421
+    categories:
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 9548223
+      name: modmuss50
+      url: https://www.curseforge.com/members/9548223-modmuss50?username=modmuss50
+    - id: 7025176
+      name: sfPlayer1
+      url: https://www.curseforge.com/members/7025176-sfplayer1?username=sfplayer1
+    mainFileId: 5065018
+  - name: Better Combat [Fabric & Forge]
+    id: 639842
+    slug: better-combat-by-daedelus
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/better-combat-by-daedelus
+      wikiUrl: 
+      issuesUrl: https://github.com/ZsoltMolnarrr/BetterCombat/issues
+      sourceUrl: https://github.com/ZsoltMolnarrr/BetterCombat
+    summary: "\u2694\uFE0F Easy, spectacular and fun melee combat system from Minecraft
+      Dungeons."
+    status: 4
+    downloadCount: 10434730
+    isFeatured: 0
+    primaryCategoryId: 434
+    categories:
+    - name: Adventure and RPG
+      id: 422
+      slug: adventure-rpg
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/adventure-rpg
+      isClass: 0
+      parentCategoryId: 6
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    - name: Utility & QoL
+      id: 5191
+      slug: utility-qol
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/utility-qol
+      isClass: 0
+      parentCategoryId: 6
+    - name: Armor, Tools, and Weapons
+      id: 434
+      slug: armor-weapons-tools
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/armor-weapons-tools
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 103343666
+      name: daedelus_dev
+      url: https://www.curseforge.com/members/103343666-daedelus_dev?username=daedelus_dev
+    mainFileId: 5065423
+  - name: Lithium (Fabric)
+    id: 360438
+    slug: lithium
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/lithium
+      wikiUrl: 
+      issuesUrl: https://github.com/jellysquid3/lithium-fabric/issues
+      sourceUrl: https://github.com/jellysquid3/lithium
+    summary: An optimization mod for Minecraft which improves server performance
+      significantly
+    status: 4
+    downloadCount: 21867797
+    isFeatured: 0
+    primaryCategoryId: 425
+    categories:
+    - name: Server Utility
+      id: 435
+      slug: server-utility
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/server-utility
+      isClass: 0
+      parentCategoryId: 6
+    - name: Miscellaneous
+      id: 425
+      slug: mc-miscellaneous
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-miscellaneous
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 28746583
+      name: jellysquid3_
+      url: https://www.curseforge.com/members/28746583-jellysquid3_?username=jellysquid3_
+    mainFileId: 4972281
+  - name: Visible Ores
+    id: 422825
+    slug: visible-ores
+    gameId: 432
+    classId: 12
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/texture-packs/visible-ores
+      wikiUrl: 
+      issuesUrl: 
+      sourceUrl: 
+    summary: Uses Optifine to make ores clearly spotted
+    status: 4
+    downloadCount: 4884353
+    isFeatured: 0
+    primaryCategoryId: 393
+    categories:
+    - name: Miscellaneous
+      id: 405
+      slug: miscellaneous
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/miscellaneous
+      isClass: 0
+      parentCategoryId: 12
+    - name: Traditional
+      id: 403
+      slug: traditional
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/traditional
+      isClass: 0
+      parentCategoryId: 12
+    - name: 16x
+      id: 393
+      slug: sixteen-x
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/sixteen-x
+      isClass: 0
+      parentCategoryId: 12
+    authors:
+    - id: 101598418
+      name: Techy69
+      url: https://www.curseforge.com/members/101598418-techy69?username=techy69
+    mainFileId: 4816645
+  - name: Cloth Config API (Fabric/Forge/NeoForge)
+    id: 348521
+    slug: cloth-config
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/cloth-config
+      wikiUrl: https://shedaniel.gitbook.io/cloth-config/
+      issuesUrl: https://github.com/shedaniel/ClothConfig/issues
+      sourceUrl: https://github.com/shedaniel/ClothConfig
+    summary: Config Screen API for Minecraft
+    status: 4
+    downloadCount: 93528476
+    isFeatured: 0
+    primaryCategoryId: 421
+    categories:
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 32851078
+      name: shedaniel
+      url: https://www.curseforge.com/members/32851078-shedaniel?username=shedaniel
+    - id: 101070148
+      name: LinkieIsBetterThanK9
+      url: https://www.curseforge.com/members/101070148-linkieisbetterthank9?username=linkieisbetterthank9
+    mainFileId: 4973457
+  - name: Waystones (Fabric Edition)
+    id: 500087
+    slug: waystones-fabric
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/waystones-fabric
+      wikiUrl: https://mods.twelveiterations.com/mc/waystones
+      issuesUrl: https://github.com/ModdingForBlockheads/Waystones/issues
+      sourceUrl: https://github.com/ModdingForBlockheads/Waystones
+    summary: Teleport back to activated waystones. For Survival, Adventure or Servers.
+    status: 4
+    downloadCount: 2623241
+    isFeatured: 0
+    primaryCategoryId: 414
+    categories:
+    - name: Magic
+      id: 419
+      slug: magic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/magic
+      isClass: 0
+      parentCategoryId: 6
+    - name: Server Utility
+      id: 435
+      slug: server-utility
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/server-utility
+      isClass: 0
+      parentCategoryId: 6
+    - name: Player Transport
+      id: 414
+      slug: technology-player-transport
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/technology/technology-player-transport
+      isClass: 0
+      parentCategoryId: 412
+    - name: Adventure and RPG
+      id: 422
+      slug: adventure-rpg
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/adventure-rpg
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 12099681
+      name: BlayTheNinth
+      url: https://www.curseforge.com/members/12099681-blaytheninth?username=blaytheninth
+    mainFileId: 4993162
+  - name: Motschen's Better Leaves
+    id: 380969
+    slug: motschens-better-leaves
+    gameId: 432
+    classId: 12
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/texture-packs/motschens-better-leaves
+      wikiUrl: 
+      issuesUrl: https://github.com/TeamMidnightDust/BetterLeavesPack/issues
+      sourceUrl: https://github.com/TeamMidnightDust/BetterLeavesPack
+    summary: Makes leaves bushier while being compatible with texturepacks!
+    status: 4
+    downloadCount: 10479203
+    isFeatured: 0
+    primaryCategoryId: 393
+    categories:
+    - name: 16x
+      id: 393
+      slug: sixteen-x
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/sixteen-x
+      isClass: 0
+      parentCategoryId: 12
+    - name: Mod Support
+      id: 4465
+      slug: mod-support
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/mod-support
+      isClass: 0
+      parentCategoryId: 12
+    - name: Photo Realistic
+      id: 400
+      slug: photo-realistic
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/photo-realistic
+      isClass: 0
+      parentCategoryId: 12
+    - name: Miscellaneous
+      id: 405
+      slug: miscellaneous
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/miscellaneous
+      isClass: 0
+      parentCategoryId: 12
+    authors:
+    - id: 36637866
+      name: Motschen
+      url: https://www.curseforge.com/members/36637866-motschen?username=motschen
+    mainFileId: 4434043
+  - name: Sound Physics Remastered
+    id: 535489
+    slug: sound-physics-remastered
+    gameId: 432
+    classId: 6
+    enabled: 0
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/sound-physics-remastered
+      wikiUrl: 
+      issuesUrl: https://github.com/henkelmax/sound-physics-remastered/issues
+      sourceUrl: https://github.com/henkelmax/sound-physics-remastered
+    summary: A Minecraft mod that provides realistic sound attenuation, reverberation,
+      and absorption through blocks.
+    status: 4
+    downloadCount: 14623141
+    isFeatured: 0
+    primaryCategoryId: 422
+    categories:
+    - name: Adventure and RPG
+      id: 422
+      slug: adventure-rpg
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/adventure-rpg
+      isClass: 0
+      parentCategoryId: 6
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 20569971
+      name: henkelmax
+      url: https://www.curseforge.com/members/20569971-henkelmax?username=henkelmax
+    mainFileId: 4680051
+  - name: BSL Shaders
+    id: 322506
+    slug: bsl-shaders
+    gameId: 432
+    classId: 6552
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/shaders/bsl-shaders
+      wikiUrl: 
+      issuesUrl: 
+      sourceUrl: 
+    summary: 'Shaderpack for Minecraft: Java Edition. It''s bright, colorful, and
+      distinct.'
+    status: 4
+    downloadCount: 29173949
+    isFeatured: 0
+    primaryCategoryId: 6554
+    categories:
+    - name: Fantasy
+      id: 6554
+      slug: fantasy
+      gameId: 432
+      classId: 6552
+      url: https://www.curseforge.com/minecraft/shaders/fantasy
+      isClass: 0
+      parentCategoryId: 6552
+    authors:
+    - id: 19357272
+      name: capttatsu
+      url: https://www.curseforge.com/members/19357272-capttatsu?username=capttatsu
+    mainFileId: 5062859
+  - name: Visuality
+    id: 521126
+    slug: visuality
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/visuality
+      wikiUrl: 
+      issuesUrl: https://github.com/PinkGoosik/visuality/issues
+      sourceUrl: https://github.com/PinkGoosik/visuality
+    summary: Little visual improvements by adding a bunch of new particles.
+    status: 4
+    downloadCount: 13762691
+    isFeatured: 0
+    primaryCategoryId: 425
+    categories:
+    - name: Miscellaneous
+      id: 425
+      slug: mc-miscellaneous
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-miscellaneous
+      isClass: 0
+      parentCategoryId: 6
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 31498593
+      name: PinkGoosik
+      url: https://www.curseforge.com/members/31498593-pinkgoosik?username=pinkgoosik
+    mainFileId: 4760021
+  - name: Balm (Fabric Edition)
+    id: 500525
+    slug: balm-fabric
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/balm-fabric
+      wikiUrl: https://mods.twelveiterations.com/
+      issuesUrl: https://github.com/ModdingForBlockheads/Balm/issues
+      sourceUrl: https://github.com/ModdingForBlockheads/Balm
+    summary: "Abstraction Layer (but not really)\u2122 for Blay's multiplatform mods"
+    status: 4
+    downloadCount: 13305323
+    isFeatured: 0
+    primaryCategoryId: 421
+    categories:
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 12099681
+      name: BlayTheNinth
+      url: https://www.curseforge.com/members/12099681-blaytheninth?username=blaytheninth
+    mainFileId: 5034377
+  - name: Useful Backpacks
+    id: 274338
+    slug: useful-backpacks
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/useful-backpacks
+      wikiUrl: 
+      issuesUrl: https://github.com/MC-U-Team/Useful-Backpacks/issues
+      sourceUrl: https://github.com/MC-U-Team/Useful-Backpacks
+    summary: Need more slots? Try these backpacks
+    status: 4
+    downloadCount: 19320272
+    isFeatured: 0
+    primaryCategoryId: 420
+    categories:
+    - name: Storage
+      id: 420
+      slug: storage
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/storage
+      isClass: 0
+      parentCategoryId: 6
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 12785425
+      name: HyCraftHD
+      url: https://www.curseforge.com/members/12785425-hycrafthd?username=hycrafthd
+    mainFileId: 4771704
+  - name: CIT Resewn
+    id: 521427
+    slug: cit-resewn
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/cit-resewn
+      wikiUrl: https://citresewn.shcm.io/
+      issuesUrl: https://github.com/SHsuperCM/CITResewn/issues
+      sourceUrl: https://github.com/SHsuperCM/CITResewn
+    summary: Re-implements MCPatcher's CIT (custom item textures from optifine resource
+      packs)
+    status: 4
+    downloadCount: 9906524
+    isFeatured: 0
+    primaryCategoryId: 425
+    categories:
+    - name: Miscellaneous
+      id: 425
+      slug: mc-miscellaneous
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-miscellaneous
+      isClass: 0
+      parentCategoryId: 6
+    - name: Map and Information
+      id: 423
+      slug: map-information
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/map-information
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 30081448
+      name: SHsuperCM
+      url: https://www.curseforge.com/members/30081448-shsupercm?username=shsupercm
+    mainFileId: 4577525
+  - name: playerAnimator
+    id: 658587
+    slug: playeranimator
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/playeranimator
+      wikiUrl: 
+      issuesUrl: https://github.com/KosmX/fabricPlayerAnimation/issues
+      sourceUrl: https://github.com/KosmX/fabricPlayerAnimation
+    summary: player animation library
+    status: 4
+    downloadCount: 13989472
+    isFeatured: 0
+    primaryCategoryId: 421
+    categories:
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    - name: Cosmetic
+      id: 424
+      slug: cosmetic
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/cosmetic
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 100940600
+      name: KosmX
+      url: https://www.curseforge.com/members/100940600-kosmx?username=kosmx
+    mainFileId: 4446526
+  - name: Starlight (Fabric)
+    id: 521783
+    slug: starlight
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/starlight
+      wikiUrl: 
+      issuesUrl: https://github.com/PaperMC/Starlight/issues
+      sourceUrl: https://github.com/PaperMC/Starlight
+    summary: 'Rewrites the light engine to fix lighting performance and lighting
+      errors '
+    status: 4
+    downloadCount: 13336737
+    isFeatured: 0
+    primaryCategoryId: 425
+    categories:
+    - name: Miscellaneous
+      id: 425
+      slug: mc-miscellaneous
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-miscellaneous
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 11525464
+      name: Spottedstar
+      url: https://www.curseforge.com/members/11525464-spottedstar?username=spottedstar
+    mainFileId: 4947005
+  - name: CreativeCore
+    id: 257814
+    slug: creativecore
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/creativecore
+      wikiUrl: 
+      issuesUrl: https://github.com/CreativeMD/CreativeCore/issues
+      sourceUrl: https://github.com/CreativeMD/CreativeCore
+    summary: a core mod
+    status: 4
+    downloadCount: 68465889
+    isFeatured: 0
+    primaryCategoryId: 421
+    categories:
+    - name: API and Library
+      id: 421
+      slug: library-api
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/library-api
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 8685730
+      name: CreativeMD
+      url: https://www.curseforge.com/members/8685730-creativemd?username=creativemd
+    mainFileId: 5056178
+  - name: Game Menu Mod Option [Forge]
+    id: 353051
+    slug: gamemenumodoption
+    gameId: 432
+    classId: 6
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/mc-mods/gamemenumodoption
+      wikiUrl: 
+      issuesUrl: 
+      sourceUrl: https://github.com/MORIMORI0317/GameMenuModOption
+    summary: MOD settings to the game menu as before 1.12.2
+    status: 4
+    downloadCount: 9422648
+    isFeatured: 0
+    primaryCategoryId: 425
+    categories:
+    - name: Miscellaneous
+      id: 425
+      slug: mc-miscellaneous
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/mc-miscellaneous
+      isClass: 0
+      parentCategoryId: 6
+    - name: Utility & QoL
+      id: 5191
+      slug: utility-qol
+      gameId: 432
+      classId: 6
+      url: https://www.curseforge.com/minecraft/mc-mods/utility-qol
+      isClass: 0
+      parentCategoryId: 6
+    authors:
+    - id: 30121492
+      name: morimori0317
+      url: https://www.curseforge.com/members/30121492-morimori0317?username=morimori0317
+    mainFileId: 4658132
+  - name: Fresh Animations
+    id: 453763
+    slug: fresh-animations
+    gameId: 432
+    classId: 12
+    enabled: 1
+    links:
+      websiteUrl: https://www.curseforge.com/minecraft/texture-packs/fresh-animations
+      wikiUrl: 
+      issuesUrl: https://discord.gg/FVGp2479yU
+      sourceUrl: 
+    summary: Dynamic animated entities to freshen your Minecraft experience.
+    status: 4
+    downloadCount: 14376358
+    isFeatured: 0
+    primaryCategoryId: 393
+    categories:
+    - name: Modern
+      id: 401
+      slug: modern
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/modern
+      isClass: 0
+      parentCategoryId: 12
+    - name: 16x
+      id: 393
+      slug: sixteen-x
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/sixteen-x
+      isClass: 0
+      parentCategoryId: 12
+    - name: Animated
+      id: 404
+      slug: animated
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/animated
+      isClass: 0
+      parentCategoryId: 12
+    - name: Miscellaneous
+      id: 405
+      slug: miscellaneous
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/miscellaneous
+      isClass: 0
+      parentCategoryId: 12
+    - name: Traditional
+      id: 403
+      slug: traditional
+      gameId: 432
+      classId: 12
+      url: https://www.curseforge.com/minecraft/texture-packs/traditional
+      isClass: 0
+      parentCategoryId: 12
+    authors:
+    - id: 101435417
+      name: Fresh__LX
+      url: https://www.curseforge.com/members/101435417-fresh__lx?username=fresh__lx
+    mainFileId: 4508899
+  m_modSearched: useful backpacks
+  m_modListPath: 
+--- !u!4 &85908984
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85908982}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &519420028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519420032}
+  - component: {fileID: 519420031}
+  - component: {fileID: 519420029}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &519420029
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+--- !u!20 &519420031
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.06666667, g: 0.06666667, b: 0.06666667, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 0
+  m_HDR: 1
+  m_AllowMSAA: 0
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 0
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &519420032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1844497673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1844497676}
+  - component: {fileID: 1844497675}
+  - component: {fileID: 1844497674}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1844497674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844497673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1844497675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844497673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1844497676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844497673}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2108982427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2108982429}
+  - component: {fileID: 2108982428}
+  - component: {fileID: 2108982430}
+  m_Layer: 5
+  m_Name: UIDocument
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2108982428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108982427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PanelSettings: {fileID: 11400000, guid: d0a89ce4398baca4b8d75a4cfb71c3db, type: 2}
+  m_ParentUI: {fileID: 0}
+  sourceAsset: {fileID: 9197481963319205126, guid: ae3945845d56c0c4ca495d0c0798cfc9, type: 3}
+  m_SortingOrder: 0
+--- !u!4 &2108982429
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108982427}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2108982430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2108982427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3f356e49c463d468410f816977f5f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  documnnent: {fileID: 0}
+  m_modpackItem: {fileID: 9197481963319205126, guid: 2a8735664d041794d809d005ff4b1105, type: 3}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 519420032}
+  - {fileID: 85908984}
+  - {fileID: 2108982429}
+  - {fileID: 1844497676}

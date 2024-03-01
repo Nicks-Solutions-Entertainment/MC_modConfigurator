@@ -1,0 +1,615 @@
+{
+    "data": [
+        {
+            "id": 946576,
+            "gameId": 432,
+            "name": " the meat update",
+            "slug": "the-meat-update",
+            "links": {
+                "websiteUrl": "https://www.curseforge.com/minecraft/mc-mods/the-meat-update",
+                "wikiUrl": "",
+                "issuesUrl": null,
+                "sourceUrl": null
+            },
+            "summary": "a mod that will add mineable meat and and meat tools.",
+            "status": 4,
+            "downloadCount": 3,
+            "isFeatured": false,
+            "primaryCategoryId": 434,
+            "categories": [
+                {
+                    "id": 407,
+                    "gameId": 432,
+                    "name": "Biomes",
+                    "slug": "world-biomes",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/world-gen/world-biomes",
+                    "iconUrl": "https://media.forgecdn.net/avatars/6/22/635351492995856506.png",
+                    "dateModified": "2014-05-08T17:34:59.587Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 406
+                },
+                {
+                    "id": 434,
+                    "gameId": 432,
+                    "name": "Armor, Tools, and Weapons",
+                    "slug": "armor-weapons-tools",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/armor-weapons-tools",
+                    "iconUrl": "https://media.forgecdn.net/avatars/6/47/635351498790409758.png",
+                    "dateModified": "2014-05-08T17:44:39.057Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 6
+                },
+                {
+                    "id": 410,
+                    "gameId": 432,
+                    "name": "Dimensions",
+                    "slug": "world-dimensions",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/world-gen/world-dimensions",
+                    "iconUrl": "https://media.forgecdn.net/avatars/6/25/635351494468414756.png",
+                    "dateModified": "2014-05-08T17:37:26.84Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 406
+                }
+            ],
+            "classId": 6,
+            "authors": [
+                {
+                    "id": 106688983,
+                    "name": "Wearebread312",
+                    "url": "https://www.curseforge.com/members/106688983-stoic_almeida6235017?username=stoic_almeida6235017"
+                }
+            ],
+            "logo": {
+                "id": 915648,
+                "modId": 946576,
+                "title": "638373820122184841.png",
+                "description": "",
+                "thumbnailUrl": "https://media.forgecdn.net/avatars/thumbnails/915/648/256/256/638373820122184841.png",
+                "url": "https://media.forgecdn.net/avatars/915/648/638373820122184841.png"
+            },
+            "screenshots": [
+                {
+                    "id": 769591,
+                    "modId": 946576,
+                    "title": "A new dimension!",
+                    "description": "",
+                    "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/769/591/310/172/screenshot-2023-12-04-165237.png",
+                    "url": "https://media.forgecdn.net/attachments/769/591/screenshot-2023-12-04-165237.png"
+                },
+                {
+                    "id": 769710,
+                    "modId": 946576,
+                    "title": "A whole new tool set",
+                    "description": "",
+                    "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/769/710/310/172/screenshot-2023-12-04-165311.png",
+                    "url": "https://media.forgecdn.net/attachments/769/710/screenshot-2023-12-04-165311.png"
+                }
+            ],
+            "mainFileId": 4927435,
+            "latestFiles": [
+                {
+                    "id": 4927435,
+                    "gameId": 432,
+                    "modId": 946576,
+                    "isAvailable": true,
+                    "displayName": " the meat update",
+                    "fileName": "minecraftthecanibalupdate.jar",
+                    "releaseType": 2,
+                    "fileStatus": 4,
+                    "hashes": [
+                        {
+                            "value": "690b73476b79a3f8cbf24d82cb77082e76ddff43",
+                            "algo": 1
+                        },
+                        {
+                            "value": "2c1332115407b53aceaa262fe70d9281",
+                            "algo": 2
+                        }
+                    ],
+                    "fileDate": "2023-12-04T21:38:20.627Z",
+                    "fileLength": 141188,
+                    "downloadCount": 44,
+                    "downloadUrl": "https://edge.forgecdn.net/files/4927/435/minecraftthecanibalupdate.jar",
+                    "gameVersions": [
+                        "Client",
+                        "1.20.1",
+                        "Forge",
+                        "2"
+                    ],
+                    "sortableGameVersions": [
+                        {
+                            "gameVersionName": "Client",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2022-12-08T00:00:00Z",
+                            "gameVersionTypeId": 75208
+                        },
+                        {
+                            "gameVersionName": "1.20.1",
+                            "gameVersionPadded": "0000000001.0000000020.0000000001",
+                            "gameVersion": "1.20.1",
+                            "gameVersionReleaseDate": "2023-06-12T14:26:38.477Z",
+                            "gameVersionTypeId": 75125
+                        },
+                        {
+                            "gameVersionName": "Forge",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+                            "gameVersionTypeId": 68441
+                        },
+                        {
+                            "gameVersionName": "2",
+                            "gameVersionPadded": "0000000002",
+                            "gameVersion": "2",
+                            "gameVersionReleaseDate": "2024-01-15T00:00:00Z",
+                            "gameVersionTypeId": 2
+                        }
+                    ],
+                    "dependencies": [],
+                    "alternateFileId": 0,
+                    "isServerPack": false,
+                    "fileFingerprint": 4127328567,
+                    "modules": [
+                        {
+                            "name": "META-INF",
+                            "fingerprint": 1289144484
+                        },
+                        {
+                            "name": "assets",
+                            "fingerprint": 2589443909
+                        },
+                        {
+                            "name": "data",
+                            "fingerprint": 1648510952
+                        },
+                        {
+                            "name": "net",
+                            "fingerprint": 1724138665
+                        },
+                        {
+                            "name": "pack.mcmeta",
+                            "fingerprint": 3888393594
+                        }
+                    ]
+                }
+            ],
+            "latestFilesIndexes": [
+                {
+                    "gameVersion": "1.20.1",
+                    "fileId": 4927435,
+                    "filename": "minecraftthecanibalupdate.jar",
+                    "releaseType": 2,
+                    "gameVersionTypeId": 75125,
+                    "modLoader": 1
+                }
+            ],
+            "latestEarlyAccessFilesIndexes": [],
+            "dateCreated": "2023-12-04T21:33:00.713Z",
+            "dateModified": "2023-12-05T19:40:50.633Z",
+            "dateReleased": "2023-12-04T21:38:20.627Z",
+            "allowModDistribution": true,
+            "gamePopularityRank": 999999,
+            "isAvailable": true,
+            "thumbsUpCount": 0
+        },
+        {
+            "id": 955991,
+            "gameId": 432,
+            "name": "AE2 + Mouse Tweaks Fix",
+            "slug": "ae2-mousetweaks-fix",
+            "links": {
+                "websiteUrl": "https://www.curseforge.com/minecraft/mc-mods/ae2-mousetweaks-fix",
+                "wikiUrl": "",
+                "issuesUrl": "https://github.com/unilock/AE2MouseTweaksFix/issues",
+                "sourceUrl": "https://github.com/unilock/AE2MouseTweaksFix"
+            },
+            "summary": "Disables Mouse Tweaks' \"WheelTweak\" in AE2 terminals",
+            "status": 4,
+            "downloadCount": 1,
+            "isFeatured": false,
+            "primaryCategoryId": 5191,
+            "categories": [
+                {
+                    "id": 5191,
+                    "gameId": 432,
+                    "name": "Utility & QoL",
+                    "slug": "utility-qol",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/utility-qol",
+                    "iconUrl": "https://media.forgecdn.net/avatars/456/558/637727379086405233.png",
+                    "dateModified": "2021-11-17T11:45:09.143Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 6
+                },
+                {
+                    "id": 4545,
+                    "gameId": 432,
+                    "name": "Applied Energistics 2",
+                    "slug": "applied-energistics-2",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/mc-addons/applied-energistics-2",
+                    "iconUrl": "https://media.forgecdn.net/avatars/25/698/635778191285491081.png",
+                    "dateModified": "2015-09-14T14:18:48.563Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 426
+                }
+            ],
+            "classId": 6,
+            "authors": [
+                {
+                    "id": 103586133,
+                    "name": "unilock",
+                    "url": "https://www.curseforge.com/members/103586133-unilock01x?username=unilock01x"
+                }
+            ],
+            "logo": {
+                "id": 926113,
+                "modId": 955991,
+                "title": "638395492014972184.png",
+                "description": "",
+                "thumbnailUrl": "https://media.forgecdn.net/avatars/thumbnails/926/113/256/256/638395492014972184.png",
+                "url": "https://media.forgecdn.net/avatars/926/113/638395492014972184.png"
+            },
+            "screenshots": [],
+            "mainFileId": 4994488,
+            "latestFiles": [
+                {
+                    "id": 4994488,
+                    "gameId": 432,
+                    "modId": 955991,
+                    "isAvailable": true,
+                    "displayName": "1.0.0+1.20.1+fabric",
+                    "fileName": "AE2-MouseTweaks-Fix-1.0.0+1.20.1+fabric.jar",
+                    "releaseType": 1,
+                    "fileStatus": 4,
+                    "hashes": [
+                        {
+                            "value": "9fe0c20548eb33e7cc55ce2cf1df8ac80e955f42",
+                            "algo": 1
+                        },
+                        {
+                            "value": "c58a757280bf01cdfee7ab924fa7bc15",
+                            "algo": 2
+                        }
+                    ],
+                    "fileDate": "2023-12-30T16:08:17.52Z",
+                    "fileLength": 4592,
+                    "downloadCount": 14,
+                    "downloadUrl": "https://edge.forgecdn.net/files/4994/488/AE2-MouseTweaks-Fix-1.0.0%2b1.20.1%2bfabric.jar",
+                    "gameVersions": [
+                        "Fabric",
+                        "Client",
+                        "1.20.1",
+                        "Quilt"
+                    ],
+                    "sortableGameVersions": [
+                        {
+                            "gameVersionName": "Fabric",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2022-09-01T00:00:00Z",
+                            "gameVersionTypeId": 68441
+                        },
+                        {
+                            "gameVersionName": "Client",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2022-12-08T00:00:00Z",
+                            "gameVersionTypeId": 75208
+                        },
+                        {
+                            "gameVersionName": "1.20.1",
+                            "gameVersionPadded": "0000000001.0000000020.0000000001",
+                            "gameVersion": "1.20.1",
+                            "gameVersionReleaseDate": "2023-06-12T14:26:38.477Z",
+                            "gameVersionTypeId": 75125
+                        },
+                        {
+                            "gameVersionName": "Quilt",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2022-05-26T00:00:00Z",
+                            "gameVersionTypeId": 68441
+                        }
+                    ],
+                    "dependencies": [
+                        {
+                            "modId": 60089,
+                            "relationType": 3
+                        },
+                        {
+                            "modId": 223794,
+                            "relationType": 3
+                        }
+                    ],
+                    "alternateFileId": 0,
+                    "isServerPack": false,
+                    "fileFingerprint": 621017776,
+                    "modules": [
+                        {
+                            "name": "META-INF",
+                            "fingerprint": 2871912626
+                        },
+                        {
+                            "name": "AE2-MouseTweaks-Fix-refmap.json",
+                            "fingerprint": 1493072104
+                        },
+                        {
+                            "name": "LICENSE_AE2-MouseTweaks-Fix",
+                            "fingerprint": 2729465260
+                        },
+                        {
+                            "name": "ae2mixin.mixins.json",
+                            "fingerprint": 1685576913
+                        },
+                        {
+                            "name": "cc",
+                            "fingerprint": 782598336
+                        },
+                        {
+                            "name": "fabric.mod.json",
+                            "fingerprint": 1705270820
+                        }
+                    ]
+                }
+            ],
+            "latestFilesIndexes": [
+                {
+                    "gameVersion": "1.20.1",
+                    "fileId": 4994488,
+                    "filename": "AE2-MouseTweaks-Fix-1.0.0+1.20.1+fabric.jar",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125,
+                    "modLoader": 4
+                },
+                {
+                    "gameVersion": "1.20.1",
+                    "fileId": 4994488,
+                    "filename": "AE2-MouseTweaks-Fix-1.0.0+1.20.1+fabric.jar",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125,
+                    "modLoader": 5
+                }
+            ],
+            "latestEarlyAccessFilesIndexes": [],
+            "dateCreated": "2023-12-30T16:06:41.477Z",
+            "dateModified": "2023-12-31T11:55:56.667Z",
+            "dateReleased": "2023-12-30T16:08:17.52Z",
+            "allowModDistribution": true,
+            "gamePopularityRank": 999999,
+            "isAvailable": true,
+            "thumbsUpCount": 0
+        },
+        {
+            "id": 961856,
+            "gameId": 432,
+            "name": "AE2 Network Analyser",
+            "slug": "ae2-network-analyser",
+            "links": {
+                "websiteUrl": "https://www.curseforge.com/minecraft/mc-mods/ae2-network-analyser",
+                "wikiUrl": "",
+                "issuesUrl": "https://github.com/GlodBlock/ExtendedAE/issues",
+                "sourceUrl": null
+            },
+            "summary": "a tool for analysing ME network visually",
+            "status": 4,
+            "downloadCount": 45,
+            "isFeatured": false,
+            "primaryCategoryId": 4545,
+            "categories": [
+                {
+                    "id": 5191,
+                    "gameId": 432,
+                    "name": "Utility & QoL",
+                    "slug": "utility-qol",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/utility-qol",
+                    "iconUrl": "https://media.forgecdn.net/avatars/456/558/637727379086405233.png",
+                    "dateModified": "2021-11-17T11:45:09.143Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 6
+                },
+                {
+                    "id": 5191,
+                    "gameId": 432,
+                    "name": "Utility & QoL",
+                    "slug": "utility-qol",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/utility-qol",
+                    "iconUrl": "https://media.forgecdn.net/avatars/456/558/637727379086405233.png",
+                    "dateModified": "2021-11-17T11:45:09.143Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 6
+                },
+                {
+                    "id": 4545,
+                    "gameId": 432,
+                    "name": "Applied Energistics 2",
+                    "slug": "applied-energistics-2",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/mc-addons/applied-energistics-2",
+                    "iconUrl": "https://media.forgecdn.net/avatars/25/698/635778191285491081.png",
+                    "dateModified": "2015-09-14T14:18:48.563Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 426
+                },
+                {
+                    "id": 4545,
+                    "gameId": 432,
+                    "name": "Applied Energistics 2",
+                    "slug": "applied-energistics-2",
+                    "url": "https://www.curseforge.com/minecraft/mc-mods/mc-addons/applied-energistics-2",
+                    "iconUrl": "https://media.forgecdn.net/avatars/25/698/635778191285491081.png",
+                    "dateModified": "2015-09-14T14:18:48.563Z",
+                    "isClass": false,
+                    "classId": 6,
+                    "parentCategoryId": 426
+                }
+            ],
+            "classId": 6,
+            "authors": [
+                {
+                    "id": 100082850,
+                    "name": "GlodBlock",
+                    "url": "https://www.curseforge.com/members/100082850-jojo2k333?username=jojo2k333"
+                }
+            ],
+            "logo": {
+                "id": 932964,
+                "modId": 961856,
+                "title": "638408004366987630.png",
+                "description": "",
+                "thumbnailUrl": "https://media.forgecdn.net/avatars/thumbnails/932/964/256/256/638408004366987630.png",
+                "url": "https://media.forgecdn.net/avatars/932/964/638408004366987630.png"
+            },
+            "screenshots": [
+                {
+                    "id": 789483,
+                    "modId": 961856,
+                    "title": "show_off",
+                    "description": "",
+                    "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/789/483/310/172/showoff.png",
+                    "url": "https://media.forgecdn.net/attachments/789/483/showoff.png"
+                },
+                {
+                    "id": 789484,
+                    "modId": 961856,
+                    "title": "gui",
+                    "description": "",
+                    "thumbnailUrl": "https://media.forgecdn.net/attachments/thumbnails/789/484/310/172/gui.png",
+                    "url": "https://media.forgecdn.net/attachments/789/484/gui.png"
+                }
+            ],
+            "mainFileId": 5030860,
+            "latestFiles": [
+                {
+                    "id": 5030860,
+                    "gameId": 432,
+                    "modId": 961856,
+                    "isAvailable": true,
+                    "displayName": "AE2NetworkAnalyser-1.20-1.0.0-forge.jar",
+                    "fileName": "AE2NetworkAnalyser-1.20-1.0.0-forge.jar",
+                    "releaseType": 1,
+                    "fileStatus": 4,
+                    "hashes": [
+                        {
+                            "value": "0dbbbf8b1ff05b72fbfd4cd63d172972641d22bf",
+                            "algo": 1
+                        },
+                        {
+                            "value": "91d9ac6b875843e1fffc618e3e8a6af3",
+                            "algo": 2
+                        }
+                    ],
+                    "fileDate": "2024-01-14T04:00:17.52Z",
+                    "fileLength": 824998,
+                    "downloadCount": 43,
+                    "downloadUrl": "https://edge.forgecdn.net/files/5030/860/AE2NetworkAnalyser-1.20-1.0.0-forge.jar",
+                    "gameVersions": [
+                        "NeoForge",
+                        "1.20.1",
+                        "Forge"
+                    ],
+                    "sortableGameVersions": [
+                        {
+                            "gameVersionName": "NeoForge",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2023-07-25T00:00:00Z",
+                            "gameVersionTypeId": 68441
+                        },
+                        {
+                            "gameVersionName": "1.20.1",
+                            "gameVersionPadded": "0000000001.0000000020.0000000001",
+                            "gameVersion": "1.20.1",
+                            "gameVersionReleaseDate": "2023-06-12T14:26:38.477Z",
+                            "gameVersionTypeId": 75125
+                        },
+                        {
+                            "gameVersionName": "Forge",
+                            "gameVersionPadded": "0",
+                            "gameVersion": "",
+                            "gameVersionReleaseDate": "2022-10-01T00:00:00Z",
+                            "gameVersionTypeId": 68441
+                        }
+                    ],
+                    "dependencies": [
+                        {
+                            "modId": 957920,
+                            "relationType": 3
+                        },
+                        {
+                            "modId": 223794,
+                            "relationType": 3
+                        }
+                    ],
+                    "alternateFileId": 0,
+                    "isServerPack": false,
+                    "fileFingerprint": 262085414,
+                    "modules": [
+                        {
+                            "name": "META-INF",
+                            "fingerprint": 1516337270
+                        },
+                        {
+                            "name": ".cache",
+                            "fingerprint": 2455995933
+                        },
+                        {
+                            "name": "assets",
+                            "fingerprint": 1407773563
+                        },
+                        {
+                            "name": "com",
+                            "fingerprint": 2881075614
+                        },
+                        {
+                            "name": "data",
+                            "fingerprint": 2698501185
+                        },
+                        {
+                            "name": "pack.mcmeta",
+                            "fingerprint": 3527492008
+                        }
+                    ]
+                }
+            ],
+            "latestFilesIndexes": [
+                {
+                    "gameVersion": "1.20.1",
+                    "fileId": 5030860,
+                    "filename": "AE2NetworkAnalyser-1.20-1.0.0-forge.jar",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125,
+                    "modLoader": 1
+                },
+                {
+                    "gameVersion": "1.20.1",
+                    "fileId": 5030860,
+                    "filename": "AE2NetworkAnalyser-1.20-1.0.0-forge.jar",
+                    "releaseType": 1,
+                    "gameVersionTypeId": 75125,
+                    "modLoader": 6
+                }
+            ],
+            "latestEarlyAccessFilesIndexes": [],
+            "dateCreated": "2024-01-14T03:40:36.66Z",
+            "dateModified": "2024-01-14T10:04:36.717Z",
+            "dateReleased": "2024-01-14T04:00:17.52Z",
+            "allowModDistribution": true,
+            "gamePopularityRank": 999999,
+            "isAvailable": true,
+            "thumbsUpCount": 0
+        }
+    ],
+    "pagination": {
+        "index": 0,
+        "pageSize": 50,
+        "resultCount": 50,
+        "totalCount": 137721
+    }
+}

@@ -1,0 +1,17 @@
+Funcoes:
+	- Ler Instancia de Modpck Instalado (courseforge)
+	- Modificar Perfil exportado (courseforge) inserindo o arquivo de perfis no ZIP
+	- Modificar (ativar/desativar) MODs  conforme perfil de desempenho.
+	- 
+
+
+	Ta saindo!...
+To criando uma ferramenta que vai proporcionar nao só o Dan mas qualquer um que monte um modpack configure perfis de "performance", habilitando e desabilitando automaticamente os  MODs segundo o perfil escolhido pelo criador ou editor do Modpack;
+Assim por exemplo, o Dan carrega o modpack dele ali, gerando um arquivo que pra quem for instalar vai dizer quais mods sao essenciais e quais sao opcionais, e uns perfis pre-montados com alguns ja pre-desabilitados.
+outra função que to adicionando é de auto-conversão entre CourseForge Profile e TLauncher Profile, reconhecendo tanto o arquivo zip compartilhado do perfil Courseforge quanto o próprio instalado ja na pasta, conferindo e ajustando versao de forrge, fabric, fabric API etc;
+
+na imagem com um cinza claro a ideia é ter uma imagem (thumb) do modpack upado pelo próprio editor (tipo o Launcher do Mine mesmo)
+
+Como da ultima vez que tentei carregar um mod do Courseforge no TL foi bem manual no fim, resolvi fazer isso pra facilitar a vida de geral.
+
+Quem tiver ideia de alguma outra funcao pra colocar, só falar.

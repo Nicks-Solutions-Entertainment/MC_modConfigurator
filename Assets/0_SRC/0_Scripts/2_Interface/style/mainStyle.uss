@@ -1,0 +1,241 @@
+VisualElement {
+}
+
+.background {
+    background-color: rgb(48, 48, 48);
+}
+
+.side_menu {
+    background-color: rgb(30, 30, 30);
+    width: 72px;
+}
+
+Label {
+    -unity-font: url('project://database/Assets/0_SRC/2_Fonts/Lexend-Regular.ttf?fileID=12800000&guid=a895adaebe749d34b8f35cfad3ce9d41&type=3#Lexend-Regular');
+    -unity-font-definition: url('project://database/Assets/0_SRC/2_Fonts/Lexend-Regular%20SDF.asset?fileID=11400000&guid=f5cfff49b20aacc47a0e726a4f54371c&type=2#Lexend-Regular SDF');
+}
+
+#top_menu .button {
+    height: 20px;
+    width: 104px;
+    -unity-font: url('project://database/Assets/0_SRC/2_Fonts/Lexend-Regular.ttf?fileID=12800000&guid=a895adaebe749d34b8f35cfad3ce9d41&type=3#Lexend-Regular');
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    transition-duration: 0.08s;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+#top_menu .button:hover {
+    height: 20px;
+    width: 104px;
+    -unity-font: url('project://database/Assets/0_SRC/2_Fonts/Lexend-Regular.ttf?fileID=12800000&guid=a895adaebe749d34b8f35cfad3ce9d41&type=3#Lexend-Regular');
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    border-bottom-width: 4px;
+    border-left-color: rgb(0, 136, 67);
+    border-right-color: rgb(0, 136, 67);
+    border-top-color: rgb(0, 136, 67);
+    border-bottom-color: rgb(0, 136, 67);
+}
+
+#top_menu .button_selected {
+    height: 20px;
+    width: 104px;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font: url('project://database/Assets/0_SRC/2_Fonts/Lexend-Regular.ttf?fileID=12800000&guid=a895adaebe749d34b8f35cfad3ce9d41&type=3#Lexend-Regular');
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    border-bottom-width: 4px;
+    border-left-color: rgb(0, 136, 67);
+    border-right-color: rgb(0, 136, 67);
+    border-top-color: rgb(0, 136, 67);
+    border-bottom-color: rgb(0, 136, 67);
+}
+
+.active {
+    display: flex;
+}
+
+.unity-button.greenButton {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/0_SRC/0_Scripts/2_Interface/0_IMGs/white_button.png?fileID=1099594095&guid=ccd645cff03aa9545870dea4287916ff&type=3#white_button_0');
+    -unity-slice-left: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+    -unity-slice-scale: 0.32px;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(54, 230, 81);
+    -unity-font-style: bold;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.unity-button.greenButton:hover {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    border-left-color: rgba(0, 0, 0, 0);
+    border-right-color: rgba(0, 0, 0, 0);
+    border-top-color: rgba(0, 0, 0, 0);
+    border-bottom-color: rgba(0, 0, 0, 0);
+    background-image: url('project://database/Assets/0_SRC/0_Scripts/2_Interface/0_IMGs/white_button.png?fileID=1099594095&guid=ccd645cff03aa9545870dea4287916ff&type=3#white_button_0');
+    -unity-slice-left: 0;
+    -unity-background-scale-mode: stretch-to-fill;
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(136, 255, 154);
+    -unity-font-style: bold;
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.modpackTittle {
+    -unity-font: url('project://database/Assets/0_SRC/2_Fonts/Minecrafter.Alt.ttf?fileID=12800000&guid=daca264a7b40a094caf0015bca12ea3f&type=3#Minecrafter.Alt');
+    -unity-font-definition: url('project://database/Assets/0_SRC/2_Fonts/Minecrafter.Alt%20SDF.asset?fileID=11400000&guid=cf13d372c91cfbf4bb5284028998e61b&type=2#Minecrafter.Alt SDF');
+    letter-spacing: 2px;
+    word-spacing: -31px;
+    -unity-text-outline-width: 1px;
+    -unity-text-outline-color: rgb(0, 0, 0);
+}
+
+.unity-label.tittle {
+    -unity-font: url('project://database/Assets/0_SRC/2_Fonts/Minecrafter.Alt.ttf?fileID=12800000&guid=daca264a7b40a094caf0015bca12ea3f&type=3#Minecrafter.Alt');
+    -unity-font-definition: url('project://database/Assets/0_SRC/2_Fonts/Minecrafter.Alt%20SDF.asset?fileID=11400000&guid=cf13d372c91cfbf4bb5284028998e61b&type=2#Minecrafter.Alt SDF');
+    font-size: 14px;
+}
+
+.unity-label.sub_tittle {
+    -unity-font: url('project://database/Assets/0_SRC/2_Fonts/Minecrafter.Reg.ttf?fileID=12800000&guid=1c4860e04df894941ba3639fabb781b6&type=3#Minecrafter.Reg');
+    -unity-font-definition: url('project://database/Assets/0_SRC/2_Fonts/Minecrafter.Reg%20SDF.asset?fileID=11400000&guid=e62c831a82ae4344693cbc3f41124773&type=2#Minecrafter.Reg SDF');
+    font-size: 14px;
+    -unity-text-outline-width: 0.2px;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.unity-label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    font-size: 8px;
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.modPerformanceProfile {
+    background-image: url('project://database/Assets/0_SRC/0_Scripts/2_Interface/0_IMGs/Modpack_profile.png?fileID=21300000&guid=51041668c2ca94c4b874b081981a9b37&type=3#Modpack_profile');
+    -unity-slice-scale: 0.16px;
+    -unity-slice-left: 6;
+    -unity-slice-top: 6;
+    -unity-slice-right: 6;
+    -unity-slice-bottom: 6;
+    width: 192px;
+    height: 184px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+    padding-left: 8px;
+    display: flex;
+}
+
+.page_content {
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    width: auto;
+    align-self: auto;
+    gap: 32px 32px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#scrollContent #unity-content-container {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-self: auto;
+    gap: 8px;
+    display: flex;
+}
+
+#unity-content-container #ModpackItem {
+    padding-left: 15px;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+#unity-text-input {
+    background-color: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url('project://database/Assets/0_SRC/2_Fonts/Lexend-Regular%20SDF.asset?fileID=11400000&guid=f5cfff49b20aacc47a0e726a4f54371c&type=2#Lexend-Regular SDF');
+    -unity-font: url('project://database/Assets/0_SRC/2_Fonts/Lexend-Regular.ttf?fileID=12800000&guid=a895adaebe749d34b8f35cfad3ce9d41&type=3#Lexend-Regular');
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+TextField .unity-label {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 4px;
+    font-size: 14px;
+    -unity-text-align: middle-left;
+    border-top-width: 4px;
+    border-right-width: 4px;
+    border-bottom-width: 4px;
+    border-left-width: 0;
+}

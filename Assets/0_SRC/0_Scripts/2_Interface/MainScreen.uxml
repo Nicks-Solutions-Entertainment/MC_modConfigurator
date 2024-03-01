@@ -1,0 +1,32 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/0_SRC/0_Scripts/2_Interface/style/mainStyle.uss?fileID=7433441132597879392&amp;guid=fafae3127a69b854dabcfe41f52cdf33&amp;type=3#mainStyle" />
+    <ui:VisualElement name="viewport" class="background" style="flex-direction: row; flex-grow: 0; flex-shrink: 0; width: 100%; height: 100%;">
+        <ui:VisualElement name="side_menu" class="side_menu" />
+        <ui:VisualElement name="page_modlib" style="background-color: rgb(48, 48, 48); flex-grow: 1;">
+            <ui:VisualElement name="topBar" style="height: 64px; width: 100%; padding-top: 0; padding-right: 16px; padding-bottom: 0; padding-left: 16px; justify-content: space-around;">
+                <ui:Label tabindex="-1" text="Minecraft Performance Profiles (mcpp)" parse-escape-sequences="true" display-tooltip-when-elided="true" name="tittle" class="sub_tittle" style="-unity-font-style: bold; -unity-text-align: upper-left; color: rgb(255, 255, 255); height: 20px; margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; font-size: 16px;" />
+                <ui:VisualElement name="top_menu" style="height: 20px; flex-direction: row;">
+                    <ui:Button text="Tudo" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bumenu_button" class="button" style="font-size: 12px;" />
+                    <ui:Button text="Forge" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bumenu_button" class="button" style="font-size: 12px;" />
+                    <ui:Button text="Fabric" parse-escape-sequences="true" display-tooltip-when-elided="true" name="bumenu_button" class="button" style="font-size: 12px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="page_library" class="page_content" style="width: 100%; flex-direction: row;">
+                <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="scrollContent" style="display: flex; background-color: rgba(0, 0, 0, 0);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="page_modpackDetail" style="padding-top: 24px; padding-right: 24px; padding-bottom: 24px; padding-left: 24px; flex-direction: row; margin-right: 0; flex-wrap: wrap; margin-left: 0; align-items: flex-start; margin-top: 0; justify-content: center; flex-grow: 1; background-color: rgb(82, 82, 82); display: flex;">
+                <ui:Label tabindex="-1" text="&lt;color=#B00000&gt;RL&lt;/color&gt; Apocalipse" parse-escape-sequences="true" display-tooltip-when-elided="true" class="modpackTittle" style="font-size: 28px; -unity-font-style: bold; color: rgb(190, 190, 190);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="page_initialSetup" style="flex-grow: 1; position: absolute; left: 0; top: 0; right: 0; bottom: 0; background-color: rgb(30, 30, 30); align-items: center; display: flex;">
+            <ui:VisualElement name="ve_tittle" style="width: 432px; height: 104px; margin-top: 16px;">
+                <ui:Label tabindex="-1" text="MINECRAFT" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_mc" class="tittle" style="font-size: 64px; -unity-text-outline-color: rgb(0, 0, 0); -unity-text-outline-width: 1px; -unity-font-style: normal; text-shadow: 0 2px 0 rgb(2, 2, 2);" />
+                <ui:Label tabindex="-1" text="Modpack PRofiles Manager" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_appName" style="font-size: 18px; -unity-text-outline-color: rgb(0, 0, 0); -unity-text-outline-width: 0; -unity-font-style: normal; -unity-font: url(&apos;project://database/Assets/0_SRC/2_Fonts/Minecrafter.Reg.ttf?fileID=12800000&amp;guid=1c4860e04df894941ba3639fabb781b6&amp;type=3#Minecrafter.Reg&apos;); -unity-font-definition: url(&apos;project://database/Assets/0_SRC/2_Fonts/Minecrafter.Reg%20SDF.asset?fileID=11400000&amp;guid=e62c831a82ae4344693cbc3f41124773&amp;type=2#Minecrafter.Reg SDF&apos;); color: rgb(19, 156, 255); margin-top: -10px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="form" style="width: 640px; height: 240px; align-items: center; justify-content: center;">
+                <ui:TextField picking-mode="Ignore" label="Instances Folder:" value="&apos;&apos;" name="txt_fld-instancePath" style="flex-direction: column; align-items: flex-start;" />
+                <ui:Button text="Button" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_submit" class="greenButton" style="width: 144px; height: 32px; margin-top: 16px; margin-right: 16px; margin-bottom: 16px; margin-left: 16px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

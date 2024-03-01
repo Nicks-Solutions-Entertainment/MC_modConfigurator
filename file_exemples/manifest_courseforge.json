@@ -1,0 +1,164 @@
+{
+  "minecraft": {
+    "version": "1.20.2",
+    "modLoaders": [
+      {
+        "id": "fabric-0.14.24",
+        "primary": true
+      }
+    ]
+  },
+  "manifestType": "minecraftModpack",
+  "manifestVersion": 1,
+  "name": "Miguxo´s V2 [Fabric 1.20.2]",
+  "version": "2.0",
+  "author": "",
+  "files": [
+    {
+      "projectID": 521783,
+      "fileID": 4802458,
+      "required": true
+    },
+    {
+      "projectID": 322506,
+      "fileID": 4799242,
+      "required": true
+    },
+    {
+      "projectID": 380969,
+      "fileID": 4434043,
+      "required": true
+    },
+    {
+      "projectID": 348521,
+      "fileID": 4762985,
+      "required": true
+    },
+    {
+      "projectID": 306612,
+      "fileID": 4811100,
+      "required": true
+    },
+    {
+      "projectID": 844662,
+      "fileID": 4839968,
+      "required": true
+    },
+    {
+      "projectID": 521126,
+      "fileID": 4760021,
+      "required": true
+    },
+    {
+      "projectID": 459496,
+      "fileID": 4765124,
+      "required": true
+    },
+    {
+      "projectID": 257814,
+      "fileID": 4779226,
+      "required": true
+    },
+    {
+      "projectID": 500525,
+      "fileID": 4770892,
+      "required": true
+    },
+    {
+      "projectID": 433760,
+      "fileID": 4763692,
+      "required": true
+    },
+    {
+      "projectID": 658587,
+      "fileID": 4446526,
+      "required": true
+    },
+    {
+      "projectID": 238222,
+      "fileID": 4767570,
+      "required": true
+    },
+    {
+      "projectID": 453763,
+      "fileID": 4508899,
+      "required": true
+    },
+    {
+      "projectID": 531351,
+      "fileID": 4779474,
+      "required": true
+    },
+    {
+      "projectID": 254284,
+      "fileID": 4706776,
+      "required": true
+    },
+    {
+      "projectID": 521427,
+      "fileID": 4577525,
+      "required": true
+    },
+    {
+      "projectID": 500087,
+      "fileID": 4770896,
+      "required": true
+    },
+    {
+      "projectID": 422825,
+      "fileID": 4816645,
+      "required": true
+    },
+    {
+      "projectID": 535489,
+      "fileID": 4680051,
+      "required": false
+    },
+    {
+      "projectID": 568563,
+      "fileID": 4839762,
+      "required": true
+    },
+    {
+      "projectID": 910095,
+      "fileID": 4738392,
+      "required": true
+    },
+    {
+      "projectID": 360438,
+      "fileID": 4765747,
+      "required": true
+    },
+    {
+      "projectID": 353051,
+      "fileID": 4658132,
+      "required": true
+    },
+    {
+      "projectID": 421897,
+      "fileID": 4817098,
+      "required": true
+    },
+    {
+      "projectID": 915779,
+      "fileID": 4764563,
+      "required": true
+    },
+    {
+      "projectID": 435044,
+      "fileID": 4596636,
+      "required": false
+    },
+    {
+      "projectID": 394468,
+      "fileID": 3488820,
+      "required": true
+    },
+    {
+      "projectID": 639842,
+      "fileID": 4820635,
+      "required": true
+    }
+  ],
+  "overrides": "overrides"
+}
