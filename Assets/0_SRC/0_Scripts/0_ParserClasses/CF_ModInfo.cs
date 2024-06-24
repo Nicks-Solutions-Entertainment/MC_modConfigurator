@@ -171,18 +171,9 @@ public class CF_ModFileInfo
     [Serializable]
     public class CF_ModFileDependence
     {
-        public int modId;
-        public RelactionType relactionType;
+        public long modId;
+        public AddonDependencyRelactionType relactionType;
 
-        public enum RelactionType
-        {
-            EmbeddedLibrary = 1,
-            OptionalDependency, 
-            RequiredDependency, 
-            Tool, 
-            Incompatible, 
-            Include
-        }
     }
 
     [Serializable]
@@ -213,7 +204,15 @@ public class CF_ModFileInfo
     }
 }
 
-
+public enum AddonDependencyRelactionType
+{
+    EmbeddedLibrary = 1,
+    OptionalDependency,
+    RequiredDependency,
+    Tool,
+    Incompatible,
+    Include
+}
 
 
 [Serializable]

@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/0_SRC/0_Scripts/2_Interface/style/mainStyle.uss?fileID=7433441132597879392&amp;guid=fafae3127a69b854dabcfe41f52cdf33&amp;type=3#mainStyle" />
+    <ui:VisualElement name="_root" style="height: 40px; width: 808px; background-color: rgb(30, 30, 30); flex-direction: row; align-items: center; justify-content: flex-start; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;">
+        <ui:VisualElement name="vg_basicInfos" style="height: 100%; flex-direction: row; align-items: center; width: 640px;">
+            <ui:VisualElement name="ico_addon" style="width: 32px; height: 32px; background-color: rgb(48, 48, 48);" />
+            <ui:VisualElement name="vg_name-id" style="flex-grow: 1; height: 100%; margin-left: 8px;">
+                <ui:Label tabindex="-1" text="ADDON NAME[LOADDER]V00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_addonName" style="font-size: 14px; -unity-text-align: middle-left; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                <ui:Label tabindex="-1" text="addon-name_loadderv0-0-0.jar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_addonID" style="font-size: 12px; -unity-text-align: middle-left; color: rgb(170, 170, 170); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="vg_author" style="height: 100%; width: 144px;">
+            <ui:Label tabindex="-1" text="author_nickname00" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_authorNick" style="height: 100%; font-size: 10px; -unity-text-align: middle-center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="vg_addonType" style="height: 100%; width: 64px; align-items: center;">
+            <ui:VisualElement name="ico_addonType" style="flex-grow: 1; width: 32px; height: 32px; background-color: rgb(48, 48, 48);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="vg_addonType" style="height: 100%; width: 128px; align-items: flex-end; justify-content: center;">
+            <ui:Toggle name="tgl_activeState" value="false" class="switch" style="height: 16px; width: 32px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

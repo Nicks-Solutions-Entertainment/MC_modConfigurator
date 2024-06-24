@@ -1,20 +1,25 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/0_SRC/0_Scripts/2_Interface/style/mainStyle.uss?fileID=7433441132597879392&amp;guid=fafae3127a69b854dabcfe41f52cdf33&amp;type=3#mainStyle" />
-    <ui:VisualElement name="modpackCard" style="width: 160px; height: 200px; background-color: rgb(48, 48, 48); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
-        <ui:VisualElement name="img_thumb" style="background-color: rgb(17, 17, 17); width: 160px; height: 116px;" />
-        <ui:VisualElement name="modpack_info" style="flex-grow: 1; background-color: rgb(15, 15, 15); padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px;">
+    <ui:VisualElement name="modpackCard" style="width: 160px; height: 200px; background-color: rgb(48, 48, 48);">
+        <ui:VisualElement name="img_thumb" picking-mode="Ignore" style="width: 160px; height: 116px; justify-content: flex-end; align-items: flex-end; background-color: rgb(12, 12, 12);">
+            <ui:VisualElement name="ve_modpackVersion" style="background-color: rgb(15, 15, 15); width: 40px; height: 24px;">
+                <ui:Label tabindex="-1" text="vx.xx.x" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_modpackVersion" style="font-size: 8px; flex-shrink: 1; flex-grow: 1;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="ve_modpackInfo" style="flex-grow: 1; background-color: rgb(15, 15, 15); padding-top: 8px; padding-right: 8px; padding-bottom: 8px; padding-left: 8px;">
             <ui:Label tabindex="-1" text="ModPack Full Name" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_name" style="color: rgb(255, 255, 255); -unity-text-align: middle-left; height: 16px;" />
             <ui:Label tabindex="-1" text="by &apos;author_username&apos;" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_author" style="color: rgb(199, 199, 199); font-size: 10px; height: 16px; -unity-text-align: middle-left;" />
-            <ui:VisualElement name="modpack_loadderInfo" style="height: 24px; flex-direction: row; margin-right: 77px; margin-left: 0; position: absolute; left: 8px; right: 8px; bottom: 8px;">
+            <ui:VisualElement name="ve_loadderInfo" style="height: 24px; flex-direction: row; margin-right: 77px; margin-left: 0; position: absolute; left: 8px; right: 8px; bottom: 8px;">
                 <ui:VisualElement name="ve_loadder" style="height: 24px; width: 24px; background-color: rgb(48, 48, 48); margin-right: 8px; flex-shrink: 0;">
                     <ui:VisualElement name="img_loadder" style="flex-grow: 1;" />
                 </ui:VisualElement>
                 <ui:VisualElement name="ve_mcVersion" style="height: 24px; width: 48px; background-color: rgb(48, 48, 48);">
-                    <ui:Label tabindex="-1" text="1.x.x" parse-escape-sequences="true" display-tooltip-when-elided="true" style="-unity-text-align: middle-center; font-size: 10px; color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-grow: 1; flex-shrink: 1;" />
+                    <ui:Label tabindex="-1" text="1.x.x" parse-escape-sequences="true" display-tooltip-when-elided="true" name="lbl_mcVersion" style="-unity-text-align: middle-center; font-size: 10px; color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; flex-grow: 1; flex-shrink: 1;" />
                 </ui:VisualElement>
             </ui:VisualElement>
-            <ui:VisualElement name="VisualElement" style="height: 24px; position: absolute; left: 8px; right: 8px; bottom: 8px; justify-content: flex-end;">
-                <ui:Button text="Jogar" parse-escape-sequences="true" display-tooltip-when-elided="true" class="greenButton" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; height: 100%;" />
+            <ui:VisualElement name="ve_playBtn" style="height: 24px; position: absolute; left: 8px; right: 8px; bottom: 8px; justify-content: flex-end; display: flex; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+                <ui:Button text="NAO CONFIGURADO" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_notConfigured" focusable="false" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; height: 100%; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-color: rgb(48, 48, 48); color: rgb(255, 255, 255); -unity-font-definition: url(&apos;project://database/Assets/0_SRC/2_Fonts/Lexend-Regular%20SDF.asset?fileID=11400000&amp;guid=f5cfff49b20aacc47a0e726a4f54371c&amp;type=2#Lexend-Regular SDF&apos;); font-size: 10px; -unity-font-style: bold; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" />
+                <ui:Button text="Jogar" parse-escape-sequences="true" display-tooltip-when-elided="true" name="btn_play" class="greenButton" style="height: 100%;" />
             </ui:VisualElement>
         </ui:VisualElement>
     </ui:VisualElement>

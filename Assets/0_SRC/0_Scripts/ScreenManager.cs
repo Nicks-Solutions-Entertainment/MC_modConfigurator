@@ -5,76 +5,162 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
+using static UnityEditor.Progress;
 
 public class ScreenManager : MonoBehaviour
 {
 
     [SerializeField] UIDocument documnnent;
     [SerializeField] VisualTreeAsset m_modpackItem;
+    [SerializeField] VisualTreeAsset m_modpackAddonTableItem;
     //[SerializeField] UIDocument m_modpack;
     VisualElement doc_root;
     InitialSettupPage page_initialSettup;
     ContentPage page_modpackList;
     ContentPage page_modpackDetails;
+    ProfileAddonsListPage page_addonsList;
+
+    ModpackSettupPage page_modpackSettup;
+
 
     // Start is called before the first frame update
     void Start()
     {
         documnnent = GetComponent<UIDocument>();
         LoadElements();
-        StartApp();
+        AppManager.Instance.OnStartApp += OnStartApp;
+        AppManager.Instance.StartApp();
+    }
+
+    private void OnStartApp()
+    {
+        if (!ApplicationData.HasInitialSettup)
+            GotoInitialSetup();
+        else
+            GoToHome();
     }
 
     void LoadElements()
     {
         doc_root = documnnent.rootVisualElement;
-        page_modpackList = new ContentPage(doc_root.Query("page_library"),this);
+        page_modpackList = new ContentPage(doc_root.Query("page_library"), this);
         page_modpackDetails = new ContentPage(doc_root.Query("page_modpackDetail"), this);
+        page_modpackSettup = new ModpackSettupPage(doc_root.Query("page_modepackSettup"), this);
         page_initialSettup = new InitialSettupPage(doc_root.Query("page_initialSetup"), this);
-    }
-
-    void StartApp()
-    {
-        //if (!ApplicationData.HasInitialSettup)
-            GotoInitialSetup();
-        //else
-            //GoToHome();
+        
+        page_addonsList = new ProfileAddonsListPage(doc_root.Query("page_addonsList"), this);
+        page_addonsList.addonItemTreeAsset = m_modpackAddonTableItem;
     }
 
 
+    //usar packageType para definir o tipo de addon
+    //
     private void ClearScreens()
     {
-        page_initialSettup.visible = 
-        page_modpackList.visible = 
-        page_modpackDetails.visible = 
+        page_initialSettup.visible =
+        page_modpackList.visible =
+        page_modpackDetails.visible =
+        page_modpackSettup.visible =
             false;
-
     }
+
     private void GotoInitialSetup()
     {
         ClearScreens();
         page_initialSettup.visible = true;
     }
 
-    void GoToHome()
+    public void GoToHome()
     {
+        //StartCoroutine(_YieldLoadHome());
         ClearScreens();
         page_modpackList.visible = true;
         AddElementsHandlingGapBetweenThem();
     }
+    IEnumerator _YieldLoadHome()
+    {
+        ClearScreens();
+        yield return new WaitForEndOfFrame();
+        page_modpackList.visible = true;
+        {
+            //TemplateContainer _lastElement = null;
+            //string[] _instances = CourseForgeConnector.GetInstancesOnFolder(ApplicationData.instancesPath);
+            //for (int i = 0; i < _instances.Length; i++)
+            foreach (var _instance in AppManager.RunetimeInstances)
+            {
+                TemplateContainer _item = m_modpackItem.CloneTree();
+                _item.name = "ModpackItem";
+                var _modpackItem = new ModpackItem(_item, _instance.Value, OnModpackItemClicked);
+                //_modpackItem.SetEvents();
+
+                page_modpackList.AddContent(_item);
+                //if(i+1 < _instances.Length)
+                AddGapOnContentToNext(_item, 24);
+                yield return new WaitForSeconds(.2f);
+
+                //_lastElement = _item;
+            }
+        }
+    }
+
+    public void GoToModpackDetails(ModpackSettings modpackSettings)
+    {
+        ClearScreens();
+        Debug.Log($"GoToModpackDetails :: {modpackSettings.name}");
+        page_modpackDetails.visible = true;
+
+    }
+
+
+    private void GoToSettupModPack(ModpackSettings modpackSettings)
+    {
+        ClearScreens();
+        page_modpackSettup.modpackSettings = modpackSettings;
+        page_modpackSettup.visible = true;
+        Debug.Log($"GoToSettupModPack :: {modpackSettings.name}");
+
+    }
+
+
+    public void GoToModpackAddonList(ModpackSettings modpackSettings)
+    {
+        ClearScreens();
+        Debug.Log($"GoToModpackAddonList :: ");
+        page_addonsList.visible = true;
+        page_addonsList.SetAddons(modpackSettings.addons,modpackSettings.OnAddonStateChanged);
+    }
+
+    private void OnModpackItemClicked(ModpackItem item)
+    {
+        if (AppManager.Instance.TryGetModPacksettings(item.instanceInfos.installPath, out ModpackSettings _settings))
+            GoToModpackDetails(_settings);
+        else
+        {
+            _settings = AppManager.Instance.CreateAndGetModPackSettings(item.instanceInfos);
+            GoToSettupModPack(_settings);
+        }
+    }
+
 
     void AddElementsHandlingGapBetweenThem()
     {
         //TemplateContainer _lastElement = null;
-        for (int i = 0; i < 7; i++)
+        string[] _instances = CourseForgeConnector.GetInstancesOnFolder(ApplicationData.instancesPath);
+        //for (int i = 0; i < _instances.Length; i++)
+        foreach (var _instance in AppManager.RunetimeInstances)
         {
             TemplateContainer _item = m_modpackItem.CloneTree();
             _item.name = "ModpackItem";
+            var _modpackItem = new ModpackItem(_item, _instance.Value, OnModpackItemClicked);
+            //_modpackItem.SetEvents();
+
             page_modpackList.AddContent(_item);
+            //if(i+1 < _instances.Length)
             AddGapOnContentToNext(_item, 24);
             //_lastElement = _item;
         }
     }
+
 
     void AddGapOnContentToNext(TemplateContainer elementToAddGap, int gap)
     {
@@ -86,159 +172,12 @@ public class ScreenManager : MonoBehaviour
         }
     }
 
-    void GoToModpackDetails()
-    {
-        page_modpackList.visible = false;
-        page_modpackDetails.visible = true;
-    }
     // Update is called once per frame
     void Update()
     {
 
     }
 
-    public abstract class PageBase
-    {
-        public VisualElement root;
-        protected ScreenManager screenMng;
-        public bool visible
-        {
-            get => root.visible;
-            set
-            {
-                root.visible = value;
-                if (value)
-                    OnEnable();
-                else
-                    OnDisable();
-            }
-        }
-        public PageBase(VisualElement _rootElement,ScreenManager _screenManager)
-        {
-            root = _rootElement;
-            screenMng = _screenManager;
-            //Debug.Log($"root is null (base(_rootElement)) {root.IsUnityNull()}");
-
-            FindAndSetScreenElements();
-            OnStartPage();
-        }
-        protected abstract void FindAndSetScreenElements();
-
-        protected virtual void OnEnable()
-        {
-        
-        }
-
-        protected virtual void OnDisable()
-        {
-
-        }
 
 
-        protected abstract void OnStartPage();
-    }
-
-    public class ContentPage : PageBase
-    {
-        public ScrollView scrollElements;
-
-        public ContentPage(VisualElement _rootElement, ScreenManager _screenManager) : base(_rootElement, _screenManager)
-        {
-        }
-
-        protected override void FindAndSetScreenElements()
-        {
-            scrollElements = root.Query<ScrollView>("scrollContent");
-            
-
-        }
-        protected override void OnStartPage()
-        {
-            //scrollElements = root.Query<ScrollView>("scrollContent");
-        }
-
-        public void AddContent(VisualElement content)
-        {
-            scrollElements.Add(content);
-        }
-
-        protected override void OnEnable()
-        {
-            ClearContents();
-        }
-
-        public void ClearContents() => scrollElements.Clear();
-
-    }
-
-    public class InitialSettupPage : PageBase
-    {
-        public TextField txt_fld_InstacePath;
-        public Button btn_submit;
-
-        public InitialSettupPage(VisualElement _rootElement, ScreenManager _screenManager) : base(_rootElement, _screenManager)
-        {
-        }
-
-        protected override void FindAndSetScreenElements()
-        {
-            //Debug.Log($"root is null {root.IsUnityNull()}");
-            txt_fld_InstacePath = root.Q<TextField>("txt_fld-instancePath");
-            btn_submit = root.Q<Button>("btn_submit");
-        }
-        protected override void OnStartPage()
-        {
-            SetInterfaceElementEvents();
-        }
-
-        void SetInterfaceElementEvents()
-        {
-            //btn_submit.clicked += OnSubmit;
-            btn_submit.RegisterCallback<PointerUpEvent>(OnSubmitClicked);
-            txt_fld_InstacePath.RegisterValueChangedCallback(OnInstancesPathChanged);
-        }
-
-        private void OnSubmitClicked(PointerUpEvent evt)
-        {
-            Debug.Log($"btn_submit size:{btn_submit.contentRect.width} | {btn_submit.contentRect.height}");
-            List<RaycastResult> _result = new List<RaycastResult>() ;
-            Debug.Log($"HasPointerCapture:{evt.target.HasPointerCapture(evt.pointerId)} \n" +
-                $"IsPointerLocalPositioninsideUIElement:{IsPointerLocalPositioninsideUIElement(evt,btn_submit)}" 
-                );
-            //evt.target.HasPointerCapture(evt.pointerId) <- se o clique comecou no elemento em questao
-
-            if (EventSystem.current.IsPointerOverGameObject(evt.pointerId))
-                OnSubmit();
-
-            
-        }
-
-        bool IsPointerLocalPositioninsideUIElement<T>(PointerEventBase<T> pointerEvent,VisualElement visualElement)
-         where T : PointerEventBase<T>,new()
-        {
-            Vector3 absPosition = new Vector3(
-                Mathf.Abs(pointerEvent.localPosition.x),
-                Mathf.Abs(pointerEvent.localPosition.y)
-                );
-            bool isinside_on_X = absPosition.x <= visualElement.contentRect.width;
-            bool isinside_on_Y = absPosition.y <= visualElement.contentRect.height;
-            //bool isinside_on_Y 
-            return isinside_on_X && isinside_on_Y;
-        }
-
-        private void OnInstancesPathChanged(ChangeEvent<string> evt)
-        {
-            ApplicationData.instancesPath = evt.newValue;
-        }
-
-        void OnSubmit()
-        {
-            Debug.Log($"InitialSettupPage.OnSubmit");
-            screenMng.GoToHome();
-        }
-        protected override void OnEnable()
-        {
-            txt_fld_InstacePath.value = ApplicationData.instancesPath;
-        }
-    }
 }
